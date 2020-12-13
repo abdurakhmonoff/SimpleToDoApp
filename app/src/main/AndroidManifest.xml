@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SimpleTodoApp">
-        <activity android:name=".MainActivity">
+        <activity android:name=".TodoInfo"></activity>
+        <activity android:name=".TodoList" />
+        <activity
+            android:name=".AddTodo"
+            android:label="Add todo" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/WithoutActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

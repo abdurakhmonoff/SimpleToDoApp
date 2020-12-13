@@ -6,13 +6,57 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/todo_list_btn"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        app:layout_constraintWidth_percent=".41"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="12dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@id/add_todo_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:cardBackgroundColor="@color/app_theme">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="To do list"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/add_todo_btn"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintWidth_percent=".41"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="12dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/todo_list_btn"
+        app:cardBackgroundColor="@color/app_theme">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Add to do"
+            android:lines="1"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white" />
+    </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
