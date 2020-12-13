@@ -47,4 +47,10 @@ class TodoInfo : AppCompatActivity() {
             finish()
         }
     }
+
+    override fun onBackPressed() {
+        val intent = Intent(this,TodoList::class.java)
+        startActivity(intent)
+        finish()
+    }
 }
