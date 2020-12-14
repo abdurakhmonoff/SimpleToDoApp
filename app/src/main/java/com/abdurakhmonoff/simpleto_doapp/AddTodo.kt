@@ -48,21 +48,3 @@ class AddTodo : AppCompatActivity() {
 
     }
 }
-
-
-/*
-if (name!="" && desc!="" && createDate!="" && deadline!=""){
-                val nodeTxt = allTodo.find { it.name == name }
-                if (nodeTxt == null){
-
-                }
-            }else{
-                Toast.makeText(this,"Please, fill all blanks!",Toast.LENGTH_SHORT).show()
-            }
- */
-
-
-/*
-
-
- */

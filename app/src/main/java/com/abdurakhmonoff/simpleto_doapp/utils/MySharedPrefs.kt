@@ -40,17 +40,3 @@ class MySharedPrefs(private val context: Context) {
     }
 
 }
-
-/*
-
-fun removeTodo(todoName: String) {
-        val editor = sharedPreferences.edit()
-        val todos = getTodo()
-        for (i in todos) if (i.name == todoName) todos.remove(i)
-        val todosJson = gson.toJson(todos)
-        editor.remove("TODOS_JSON")
-        editor.putString("TODOS_JSON", todosJson)
-        editor.apply()
-    }
-
- */
