@@ -7,7 +7,7 @@ import com.google.gson.reflect.TypeToken
 
 class MySharedPrefs(private val context: Context) {
 
-    val gson = Gson()
+    private val gson = Gson()
     private val sharedPreferences = context.getSharedPreferences("TODO_SHP", Context.MODE_PRIVATE)
 
     fun getTodo(): ArrayList<Todo> {
